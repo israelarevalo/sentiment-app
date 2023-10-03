@@ -1,8 +1,6 @@
 streamlit==1.26.0
-requests==2.23.0
+requests
 pandas
-ydata-profiling
-streamlit-pandas-profiling==0.1.2
 tensorflow==2.14.0
 transformers==4.33.0
 numpy==1.23.5
