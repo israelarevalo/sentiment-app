@@ -40,7 +40,7 @@ if choice == "Home":
 # Application Scraper
 if choice == "Application Scraper":
     st.header("Application Scraper")
-    st.write("This tool allows you to scrape user reviews for mobile device applications from the Apple App Store. Simply enter the application name and the number of reviews you would like to scrape, and click 'Scrape Reviews'.")
+    st.write("This tool allows you to scrape user reviews for mobile device applications from the Apple App Store. Simply enter the application ID and the number of reviews you would like to scrape, and click 'Scrape Reviews'.")
     app_id = st.text_input("Enter the application ID (ex. '1012822112')")
     num_reviews = st.text_input("Enter the number of reviews you would like to scrape (increments of 20)")
     specify_date_range = st.checkbox("Specify Date Range")
