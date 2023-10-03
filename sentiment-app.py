@@ -9,9 +9,6 @@ from app_store_scraper import AppStore
 
 st.set_page_config(layout="wide")
 
-if os.path.exists("./data.csv"):
-    data = pd.read_csv("data.csv", index_col=None)
-
 with st.sidebar:
     st.image("https://cdn.pixabay.com/photo/2018/05/08/08/46/artificial-intelligence-3382509_1280.png", width=300)
     st.header("User Review Scraper and Sentiment Analysis Tool")
