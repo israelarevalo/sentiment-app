@@ -1,0 +1,10 @@
+streamlit==1.27.0
+pandas
+ydata_profiling
+streamlit-pandas-profiling
+tensorflow
+matplotlib==3.4.3
+pip==23.2.1
+transformers
+numpy
+app_store_scraper
