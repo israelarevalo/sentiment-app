@@ -7,5 +7,5 @@ tensorflow
 matplotlib==3.4.3
 transformers
 numpy
-sentencepiece==0.1.90
+sentencepiece==0.1.99
 app_store_scraper
