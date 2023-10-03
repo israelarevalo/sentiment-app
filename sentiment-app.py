@@ -6,7 +6,6 @@ import os
 from transformers import pipeline
 import numpy as np
 from app_store_scraper import AppStore
-from datetime import datetime
 
 st.set_page_config(layout="wide")
 
