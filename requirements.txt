@@ -1,8 +1,8 @@
-streamlit==1.27.0
-pandas
-ydata_profiling
-streamlit-pandas-profiling
-tensorflow
-transformers
-numpy
-app_store_scraper
+streamlit==1.27.1
+pandas==1.5.3
+ydata-profiling==4.5.1
+streamlit-pandas-profiling==0.1.3
+tensorflow==2.14.0
+transformers==4.33.3
+numpy==1.23.5
+app-store-scraper==0.3.5
