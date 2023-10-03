@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd
-import ydata_profiling
-from streamlit_pandas_profiling import st_profile_report
+# import ydata_profiling
+# from streamlit_pandas_profiling import st_profile_report
 from transformers import pipeline
 import numpy as np
 from app_store_scraper import AppStore
@@ -75,15 +75,15 @@ if choice == "Application Scraper":
                 st.session_state["scrape_n"] = scrape_df.shape[0]
                 st.write(f"You have successfully scraped {scrape_df.shape[0]} reviews for your selected application.")
             
-# Exploratory Data Analysis
-if choice == "Exploratory Data Analysis":
-    st.header("Automated Exploratory Data Analysis")
-    if st.session_state["scrape_df"] is not None: 
-        report = st.session_state["scrape_df"].profile_report()
-        st.write("Current Application Scraped:" + " " + st.session_state["app_id"])
-        st_profile_report(report)
-    else:
-        st.warning("Please scrape reviews to get started.")  # Display a warning message if scrape_df is None
+# # Exploratory Data Analysis
+# if choice == "Exploratory Data Analysis":
+#     st.header("Automated Exploratory Data Analysis")
+#     if st.session_state["scrape_df"] is not None: 
+#         report = st.session_state["scrape_df"].profile_report()
+#         st.write("Current Application Scraped:" + " " + st.session_state["app_id"])
+#         st_profile_report(report)
+#     else:
+#         st.warning("Please scrape reviews to get started.")  # Display a warning message if scrape_df is None
 
 
 # Model Building for Sentiment Analysis            
