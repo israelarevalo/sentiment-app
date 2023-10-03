@@ -1,10 +1,11 @@
+pip==23.2.1
 streamlit==1.27.0
 pandas
 ydata_profiling
 streamlit-pandas-profiling
 tensorflow
 matplotlib==3.4.3
-pip==23.2.1
 transformers
 numpy
+sentencepiece==0.1.90
 app_store_scraper
