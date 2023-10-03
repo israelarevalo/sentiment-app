@@ -1,9 +1,8 @@
-streamlit
+streamlit==1.27.0
 pandas
 ydata_profiling
 streamlit-pandas-profiling
 tensorflow
 transformers
 numpy
-sentencepiece
 app_store_scraper
