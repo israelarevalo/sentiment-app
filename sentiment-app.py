@@ -12,7 +12,7 @@ with st.sidebar:
     st.image("https://cdn.pixabay.com/photo/2018/05/08/08/46/artificial-intelligence-3382509_1280.png", width=300)
     st.header("User Review Scraper and Sentiment Analysis Tool")
     st.info("This application is designed to facilitate scraping user reviews for mobile device applications and conduct sentiment analysis.")
-    choice = st.radio("Navigation", ["Home", "Application Scraper", "Exploratory Data Analysis", "Sentiment Analysis"])
+    choice = st.radio("Navigation", ["Home", "Application Scraper", "Exploratory Data Analysis (Under Construction)", "Sentiment Analysis"])
 
 # Initialize scrape_df
 if "scrape_df" not in st.session_state:
@@ -26,8 +26,8 @@ predictions = []
 # Home Page
 if choice == "Home":
     st.header("Welcome to the User Review Scraper and Sentiment Analysis Tool")
-    st.write("This is a simple application to facilitate machine learning classification tasks.")
-    st.write("Start by uploading a file in the sidebar. Then, click 'Run Exploratory Data Analysis' below. This will generate a report of the data you uploaded. Then, you can click on the 'Sentiment Analysis' tab to run sentiment analysis on the reviews.")
+    st.write("This application facilitates user review scraping and sentiment analysis.")
+    st.write("Start by selecting 'Application Scraper,' filling out the required information, and scraping the desired user reviews. Then, click 'Run Exploratory Data Analysis' to generate a report of the data you uploaded (UNDER CONSTRUCTION). Then, you can click on the 'Sentiment Analysis' tab to run sentiment analysis on the reviews.")
     st.write("The citation for the sentiment analysis model used in this application is:")
     st.write("Jochen Hartmann, 'Emotion English DistilRoBERTa-base'. https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.")
     st.write("A paper for this model is currently in the works.")
