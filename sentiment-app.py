@@ -12,7 +12,7 @@ with st.sidebar:
     st.image("https://cdn.pixabay.com/photo/2018/05/08/08/46/artificial-intelligence-3382509_1280.png", width=300)
     st.header("User Review Scraper and Sentiment Analysis Tool")
     st.info("This application is designed to facilitate scraping user reviews for mobile device applications and conduct sentiment analysis.")
-    choice = st.radio("Navigation", ["Home", "Application Scraper", "Exploratory Data Analysis (Under Construction)", "Sentiment Analysis"])
+    choice = st.radio("Navigation", ["Home", "Application Scraper", "Exploratory Data Analysis", "Sentiment Analysis"])
 
 # Initialize scrape_df
 if "scrape_df" not in st.session_state:
