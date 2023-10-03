@@ -27,7 +27,7 @@ predictions = []
 if choice == "Home":
     st.header("Welcome to the User Review Scraper and Sentiment Analysis Tool")
     st.write("This application facilitates user review scraping and sentiment analysis.")
-    st.write("Start by selecting 'Application Scraper,' filling out the required information, and scraping the desired user reviews. Then, click 'Run Exploratory Data Analysis' to generate a report of the data you uploaded (UNDER CONSTRUCTION). Then, you can click on the 'Sentiment Analysis' tab to run sentiment analysis on the reviews.")
+    st.write("Start by selecting 'Application Scraper,' filling out the required information, and scraping the desired user reviews. Then, click 'Run Exploratory Data Analysis' to generate a report of the data you uploaded (UNDER CONSTRUCTION). Lastly, click on the 'Sentiment Analysis' tab to run sentiment analysis on the reviews.")
     st.write("The citation for the sentiment analysis model used in this application is:")
     st.write("Jochen Hartmann, 'Emotion English DistilRoBERTa-base'. https://huggingface.co/j-hartmann/emotion-english-distilroberta-base/, 2022.")
     st.write("A paper for this model is currently in the works.")
