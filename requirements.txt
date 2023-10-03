@@ -1,4 +1,5 @@
 streamlit
+requests==2.23.0
 pandas==1.5.3
 streamlit-pandas-profiling==0.1.3
 tensorflow==2.14.0
