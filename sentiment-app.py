@@ -1,6 +1,6 @@
 import streamlit as st 
 import pandas as pd
-# import ydata_profiling
+import ydata_profiling
 from streamlit_pandas_profiling import st_profile_report
 from transformers import pipeline
 import numpy as np

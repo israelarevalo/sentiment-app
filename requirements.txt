@@ -1,9 +1,9 @@
 streamlit==1.26.0
 requests==2.23.0
 pandas
+ydata-profiling
 streamlit-pandas-profiling==0.1.2
 tensorflow==2.14.0
 transformers==4.33.0
 numpy==1.23.5
 app-store-scraper==0.3.5
-pandas_profiling==3.0.0
