@@ -74,6 +74,15 @@ if choice == "Application Scraper":
                 st.session_state["scrape_df"] = scrape_df
                 st.session_state["scrape_n"] = scrape_df.shape[0]
                 st.write(f"You have successfully scraped {scrape_df.shape[0]} reviews for your selected application.")
+    # Allow user to download the scraped data
+    if st.session_state["scrape_df"] is not None:
+        st.write("You can download the scraped data as a CSV file by clicking the button below.")
+        if st.button("Download CSV"):
+            with st.spinner("Downloading CSV..."):
+                st.session_state["scrape_df"].to_csv("scraped_reviews.csv", index=False)
+                st.balloons()
+                st.success("Download Complete!")  
+    
             
 # # Exploratory Data Analysis
 # if choice == "Exploratory Data Analysis":
