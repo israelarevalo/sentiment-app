@@ -5,6 +5,7 @@ import pandas as pd
 from transformers import pipeline
 import numpy as np
 from app_store_scraper import AppStore
+from io import BytesIO
 
 st.set_page_config(layout="wide")
 
@@ -75,13 +76,21 @@ if choice == "Application Scraper":
                 st.session_state["scrape_n"] = scrape_df.shape[0]
                 st.write(f"You have successfully scraped {scrape_df.shape[0]} reviews for your selected application.")
     # Allow user to download the scraped data
-    if st.session_state["scrape_df"] is not None:
+    if st.session_state.get("scrape_df") is not None:
         st.write("You can download the scraped data as a CSV file by clicking the button below.")
-        if st.button("Download CSV"):
-            with st.spinner("Downloading CSV..."):
-                st.session_state["scrape_df"].to_csv("scraped_reviews.csv", index=False)
-                st.balloons()
-                st.success("Download Complete!")  
+        
+        # Convert DataFrame to CSV
+        towrite = BytesIO()
+        st.session_state["scrape_df"].to_csv(towrite, encoding='utf-8', index=False, header=True)
+        towrite.seek(0)  # move back to the beginning after writing
+        
+        # Create a link for downloading
+        btn = st.download_button(
+                label="Download CSV",
+                data=towrite,
+                file_name="scraped_reviews.csv",
+                mime="text/csv",
+            )
     
             
 # # Exploratory Data Analysis
